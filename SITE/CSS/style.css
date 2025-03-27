@@ -2,63 +2,125 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
-body{
-    display: block;
-    height: 100vh;
-    width: 100%;
+:root{
+    --Cor-Primaria:#007BFF;
+    --Cor-Secundaria:#FF9800;
+    --Cor-de-Fundo:#F5F5F5;
+    --Cor-texto-principal:#333333;
+    --Cor-Destaque-suave:#2ECC71;
     
 }
-#garoto{
-   
-    width: 70px;
-    background: blue;
-    margin-right: 30px;
-    margin-left: 30px;
-    border-radius: 50%;
+/* INICIO DA MINHA NAV BAR */
+body{
+    background-color: var(--Cor-de-Fundo);
 }
 .container-navbar{
-display: flex;
-width: 100vw;
-height: 60px;
-background-color: pink;
-
-
+    display: flex;
+    width: 100%;
+    height: 90px;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+    font-weight: bolder;
+    justify-content: space-between;
 }
+
 .navBar{
     display: flex;
-width: 100%;
-margin: 5px;
+    width: 100%;
+}
 
-    
-}
 .list-bar{
+
     display: flex;
-    width: 100%;
-    justify-content:space-around;
-    align-items: center;
     list-style: none;
-   
+    justify-content: end;
+    gap: 40px;
+    margin-right: 200px;
+    width: 100%;
+    align-items: center;
+    font-size: 22px;
     
 }
-a{
+.list-bar a {
     text-decoration: none;
-    color:rgb(216, 53, 80);
-    font-weight: bold;
+    color: black;
+
 }
+
+.logo{
+    display: flex;
+    width: 50px;
+    margin-left: 300px;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 30px;
+    
+}
+#btn-navbar{
+    display: flex;
+    padding: 10px 40px;
+    
+    background-color: var(--Cor-de-Fundo);
+    border-radius: 16px;
+    border: 1px solid var(--Cor-Primaria);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+}
+
+#btn-navbar:hover{
+    border: 1px solid #0263ca ;
+    color: #007BFF;
+}
+
+/*INICIO DO  SEÇÃO PRINCIPAL */
+
 .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+margin-top: 200px;
+text-align: center;
+
+
+  
+}
+.box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+     
+    width: 100%;
+    font-size: 25px;
+  }
+.box h2{
+    margin-bottom: 10px;
+}
+
+#search{
     display: flex;
     width: 100%;
-    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+
 }
-.box>img{
-    
-    margin-top: 200px;
-    margin-left: 20%;
+#btn-box{
+    padding: 15px;
+    width: 500px;
+    border-radius:20px 0 0 20px ;
 }
-.box p{
-   
-}
-#Casal{
-   width: 400px;
+.fa-magnifying-glass{
+    display: flex;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 13px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+ 
 }
