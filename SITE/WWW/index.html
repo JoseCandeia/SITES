@@ -4,34 +4,310 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/SITE/CSS/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ligeirinho</title>
   </head>
   <body>
+    <!-- NAVBAR -->
     <header class="container-navbar">
       <p class="logo">LIGERINHO</p>
       <nav class="navBar">
         <ul class="list-bar">
           <li><a href="#">Serviços</a></li>
-          <li><a href="#">Resgister/Login</a></li>
+          <li><a href="#">Registrar/Login</a></li>
           <li><a href="#"><button id="btn-navbar">Prestar Serviços</button></a></li>
         </ul>
       </nav>
     </header>
 
+    <div class="box">
+      <h2>Está procurando por mãos qualificadas? <br> Aqui é o lugar certo!</h2>
+      <p>Pesquise e contrate serviços com facilidade.</p>
+    </div>
+
+    <!-- BUSCA -->
+    <div id="search">
+      <input type="search" placeholder="O que você está procurando?" id="btn-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+
+    <!-- CONTEUDO CENTRAL -->
     <main class="container">
-        <section class="box">
-            <h2>Está procurando por mãos qualificadas? <br> Aqui é o lugar certo!</h2>
-            <p>Pesquise e contrate serviços com facilidade.</p>
-           
-        </section>
-        <div id="search">
-            <input type="search" placeholder="O que você está procurando? " id="btn-box"><i class="fa-solid fa-magnifying-glass"></i>
+      
+
+      <!-- SESSÕES -->
+      <section class="container-setores">
+        <!-- PSETOR DE LIMPEZA -->
+        <div class="box-setor">
+          <label for="limpeza" class="nome-setor">Limpeza e Higienização</label>
+          <select name="limpeza" id="limpeza" class="opcoes">
+            <option value="auxiliar">Nenhuma opção</option>
+            <option value="auxiliar">Auxiliar de Limpeza</option>
+            <option value="faxineiro">Faxineiro</option>
+            <option value="zelador">Zelador</option>
+            <option value="copeiro">Copeiro(a)</option>
+            <option value="conservacao">Auxiliar de Conservação</option>
+          </select>
         </div>
-        
-        
+        <!-- SETOR DE MANUTENÇÃO -->
+        <div class="box-setor">
+          <label for="manutencao" class="nome-setor">Manutenção e Reparos</label>
+          <select name="manutencao" id="manutencao" class="opcoes">
+            <option value="auxiliar">Nenhuma opção</option>
+            <option value="auxiliar">Auxiliar de Limpeza</option>
+            <option value="faxineiro">Faxineiro</option>
+            <option value="zelador">Zelador</option>
+            <option value="copeiro">Copeiro(a)</option>
+            <option value="conservacao">Auxiliar de Conservação</option>
+          </select>
+        </div>
+        <!-- SETOR DE SEGURANÇA -->
+        <div class="box-setor">
+          <label for="seguranca" class="nome-setor">Segurança</label>
+          <select name="seguranca" id="seguranca" class="opcoes">
+            <option value="auxiliar">Nenhuma opção</option>
+            <option value="auxiliar">Auxiliar de Limpeza</option>
+            <option value="faxineiro">Faxineiro</option>
+            <option value="zelador">Zelador</option>
+            <option value="copeiro">Copeiro(a)</option>
+            <option value="conservacao">Auxiliar de Conservação</option>
+          </select>
+        </div>
+        <!-- SETOR DE TRANSPORTE -->
+        <div class="box-setor">
+          <label for="transporte" class="nome-setor">Transporte</label>
+          <select name="transporte" id="transporte" class="opcoes">
+            <option value="auxiliar">Nenhuma opção</option>
+            <option value="auxiliar">Auxiliar de Limpeza</option>
+            <option value="faxineiro">Faxineiro</option>
+            <option value="zelador">Zelador</option>
+            <option value="copeiro">Copeiro(a)</option>
+            <option value="conservacao">Auxiliar de Conservação</option>
+          </select>
+        </div>
+        <!-- SETOR LOGÍSTICO -->
+        <div class="box-setor">
+          <label for="adm-logistico" class="nome-setor">Apoio Administrativo e Logístico</label>
+          <select name="adm-logistico" id="adm-logistico" class="opcoes">
+            <option value="auxiliar">Nenhuma opção</option>
+            <option value="auxiliar">Auxiliar de Limpeza</option>
+            <option value="faxineiro">Faxineiro</option>
+            <option value="zelador">Zelador</option>
+            <option value="copeiro">Copeiro(a)</option>
+            <option value="conservacao">Auxiliar de Conservação</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- PESQUISA -->
+      
+      <div class="container-pesquisa">
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/pedreiro.jpg" alt="pedreiro">
+              <label>Pedreito</label>
+             
+              <h3>Paulo</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+              </div>
+              <h3>R$ 100/h</h3>
+            </div>
+          </div>
+        </section>
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/faxineira.jpg" alt="pedreiro">
+              <label>Faxineira</label>
+              
+              <h3>Carla</h3>
+              <div class="star">
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>R$ 100/h</h3>
+            </div>
+          </div>
+        </section>
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/manicure.jpg" alt="pedreiro">
+              <label>Manecure</label>
+              
+              <h3>ANA</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>R$ 150/h</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/faxineiro.jpg" alt="pedreiro">
+              <label>Faxineiro</label>
+              <h3>alex</h3>
+              <div class="star">
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>R$ 120/h</h3>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/coxinheira.jpg" alt="pedreiro">
+              <label>coxinheiro</label>
+             
+              <h3>Eduarda</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>R$ 30/h</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/padeiro.jpg" alt="pedreiro">
+              <label>Padeiro</label>
+            
+              <h3>Felipe</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3>R$ 20/h</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/coxinheira.jpg" alt="pedreiro">
+              <label>Padeiro</label>
+              <h3>Sabrina</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>R$ 50/h</h3>
+            </div>
+          </div>
+        </section>
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/faxineira.jpg" alt="pedreiro">
+              <label>faxineira</label>
+              <h3>Elma</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3>R$ 15/h</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/manicure.jpg" alt="pedreiro">
+              <label>Manecure</label>
+              <h3>Luiza</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h3>R$ 20/h</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="box-pesquisa">
+          <div class="pesquisa">
+            <div class="conteudo-pesquisa">
+              <img src="/SITE/IMG/pedreiro.jpg" alt="pedreiro">
+              <label>PEDREIRO</label>
+              <h3>Jonathan</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i> 
+                <i class="fa-regular fa-star"></i> 
+              </div>
+              <h3>R$ 200/h</h3>
+            </div>
+          </div>
+        </section>
+      </div>
+
     </main>
+    <div class="container-sobre">
+      <h1>Sobre</h1>
+      
+      <div class="box-sobre">
+        <div class="sobre">
+          <img src="/SITE/IMG/garoto.png" alt="Ligerinho" id="img-sobre">
+         
+          <h2>Olá,eu nós somos  o Ligerinho!</h2>
+         
+          <p>Somos uma equipe focada em ajudar pessoas que necessitam de mãos de obra.
+            Juntamos os trabalhadores com o cliente de uma maneira simples e fácil, fundada em <span>
+              26 de março de 202526 de março de 2025 
+            </span>temos o compromisso com você usuários da Ligerinho, 
+            desde já conte com nosco para quando se trata de trabalho!</p></div>
+          
+        
+      </div>
+      
+    </div>
   </body>
 </html>
