@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    
+}
+#garoto{
+   
+    width: 70px;
+    background: blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+.container-navbar{
+display: flex;
+width: 100vw;
+height: 60px;
+background-color: pink;
+
+
+}
+.navBar{
+    display: flex;
+width: 100%;
+margin: 5px;
+
+    
+}
+.list-bar{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+   
+    
+}
+a{
+    text-decoration: none;
+    color:rgb(216, 53, 80);
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    
+}
+.box{
+    
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+
