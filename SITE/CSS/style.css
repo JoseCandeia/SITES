@@ -129,6 +129,9 @@ text-align: center;
     cursor: pointer;
  
 }
+.fa-magnifying-glass:hover{
+    background-color: rgba(170, 165, 165, 0.082);
+}
 /* SETORES */
 .container-setores{
     display: flex;
