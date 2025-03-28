@@ -222,44 +222,71 @@ color: grey;
 /* SOBRE */
 .container-sobre{
     display: flex;
-    width: 100%;
+    width: 67%;
     height: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     flex-direction: column;
     background-color: #3ab179;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
 }
 .container-sobre>h1{
 margin-bottom: 30px;
+margin-top: 20px;
 }
 .sobre{
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     align-items: center;
     
+    
 }
-.sobre>h2{
+.box-sob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    height: 80%;
+    width: 80%;
+}
+
+.texto-sob{
+    background-color: #2ECC71;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+  
+    width: 90%;
+    
 }
 .nomes-sobre{
     display: flex;
     width: 100px;
     height: 100px;
-    justify-content: space-between;
+    justify-content: center;
     align-self: center;
     flex-direction: column;
 }
 .box-sobre{
     display:flex;
-    width: 1200px;
+    width: 80%;
     height: 300px;
-    background-color: #007BFF;
-    align-items: flex-start;
+    background-color: #0263ca;
+    align-items: last baseline;
     margin-bottom: 30px;
 }
 #img-sobre{
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 12%;
 }
