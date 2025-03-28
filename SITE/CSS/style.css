@@ -17,6 +17,7 @@
 body{
     background-color: var(--Cor-de-Fundo);
 }
+/* NAV */
 .container-navbar{
     display: flex;
     width: 100%;
@@ -114,7 +115,7 @@ text-align: center;
     cursor: pointer;
 }
 #btn-box{
-    padding: 18px;
+    padding: 17px;
     width: 600px;
     border-radius:20px 0 0 20px ;
     font-size: 20px;
@@ -131,7 +132,7 @@ text-align: center;
 /* SETORES */
 .container-setores{
     display: flex;
-    width: 70%;
+    width: 64%;
     padding: 30px;
     background-color: rgba(0, 0, 255, 0.288);
     justify-content: space-around;
