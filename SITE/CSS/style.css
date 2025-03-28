@@ -131,11 +131,13 @@ text-align: center;
 /* SETORES */
 .container-setores{
     display: flex;
-    width: 1200px;
+    width: 70%;
     padding: 30px;
     background-color: rgba(0, 0, 255, 0.288);
     justify-content: space-around;
     margin-top: 20px;
+    border-radius: 20px;
+    
     
 }
 .nome-setor{
@@ -152,8 +154,9 @@ text-align: center;
    border: none;
    border-radius: 5px;
 color: grey;
-   
+    font-size: 15px;
 }
+
 
 /* PESQUISA DAS PESSOAS  */
 .container-pesquisa {
@@ -162,7 +165,12 @@ color: grey;
     gap: 20px;
     grid-auto-rows: 1fr; 
     border-bottom: 1px solid grey;
+    cursor: pointer;
     
+}
+.box-pesquisa:hover{
+background-color: #007BFF;
+
 }
 
 .box-pesquisa {
@@ -172,13 +180,13 @@ color: grey;
     align-items: center;
     width: 100%;  
     height: auto; 
-    background-color: #007BFF;
+    background-color: #007bffad;
     gap: 15px;  
     padding: 15px;  
     margin-bottom: 20px;  
     margin-top: 30px;
     border-radius: 8px;
-   
+    transition: 0.6s;
 
 }
 
@@ -219,74 +227,156 @@ color: grey;
 .star{
     color: yellow;
 }
+.preco{
+    color: red;
+}
 /* SOBRE */
 .container-sobre{
     display: flex;
-    width: 67%;
+    background-color: #2ecc7086;
+    width: 80%;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    text-align: center;
+    margin: 150px auto;
+    border-radius: 16px;
+    justify-content: space-between;
     flex-direction: column;
-    background-color: #3ab179;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 100px;
+    box-shadow: 5px 10px 30px rgba(36, 39, 214, 0.5);
+    
+    
 }
-.container-sobre>h1{
-margin-bottom: 30px;
-margin-top: 20px;
+.box-sobre{
+    display: flex;
+    
+    
+}
+
+.img-sobre{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px 20px 30px 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 30px;
+    box-shadow: 5px 10px 30px rgba(20, 20, 20, 0.2);
+}
+.texto-sobre{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    background-color: #007bffe0;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+    margin: auto 0;
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 10px 30px rgba(36, 39, 214, 0.3);
 }
 .sobre{
     display: flex;
-    height: 80%;
-    width: 80%;
-    align-items: center;
-    
-    
-}
-.box-sob{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 80%;
+    gap: 30px;
     width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+
+}
+#h1{
+    display: block;
+    margin: 20px auto;
+    flex-direction: column;
 }
 
-.texto-sob{
-    background-color: #2ECC71;
+/* FOOTER */
+.container-footer{
+    width: 100%;
+    background-color: #000;
     display: flex;
-    justify-content: space-between;
-    align-items:center ;
+    justify-content: space-around;
+    height: 400px;
+}
+.redes{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    background-color: #2ECC71;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.664);
+   
+}
+.redes a{
+    font-size: 30px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.63);
+}
+.assuntos {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 5px;
-  
-    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.774);
+    
+
     
 }
-.nomes-sobre{
+#borda{
     display: flex;
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-self: center;
-    flex-direction: column;
+    border-left: 1px solid white;
+    height: 60%;
+   margin: auto 0;
+  
 }
-.box-sobre{
-    display:flex;
-    width: 80%;
-    height: 300px;
-    background-color: #0263ca;
-    align-items: last baseline;
-    margin-bottom: 30px;
+.assuntos a{
+text-decoration: none;
+color: rgba(255, 255, 255, 0.521);
+
 }
-#img-sobre{
-    width: 190px;
-    height: 190px;
-    border: 1px solid;
-    border-radius: 50%;
-    padding: 10px;
-    margin-left: 12%;
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-download i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+}
+
+.playstore {
+    background-color: #3ddc84;
+}
+
+.appstore {
+    background-color: #3ddc84;
+}
+
+.btn-download:hover {
+    opacity: 0.8;
 }
